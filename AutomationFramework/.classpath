@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Jars/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-lang3-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/cssparser-0.9.11.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/dom4j.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/htmlunit-2.14.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/htmlunit-core-js-2.14.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/httpclient-4.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/httpcore-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/httpmime-4.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/javacsv.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/jopari-automation-framework-1.0.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/json-20080701.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/mailapi.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/nekohtml-1.9.20.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/poi-3.8-beta3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/poi-ooxml-3.8-beta3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/poi-ooxml-schemas-3.8-beta3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/reportng-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/selenium-java-2.42.2 (1).zip"/>
+	<classpathentry kind="lib" path="D:/Jars/selenium-java-2.42.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/selenium-java-2.42.2-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="D:/Jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Nayan.Banerjee/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.jsch/0.1.51_1/org.apache.servicemix.bundles.jsch-0.1.51_1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nayan.Banerjee/.m2/repository/org/seleniumhq/selenium/selenium-server/2.0a2/selenium-server-2.0a2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nayan.Banerjee/.m2/repository/org/seleniumhq/selenium/selenium-support/2.39.0/selenium-support-2.39.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
