@@ -1,0 +1,180 @@
+2014-09-15 10:34:14,627 INFO  [com.jopari.automation.testng.util.TestNGHelper] Message: Generating XMLSuites from: .\src\main\java\com\jopari\testscript\testsuites\PayerUsersTest.xml
+2014-09-15 10:34:14,827 INFO  [com.jopari.testscript.testscripts.AutomationTestSuiteRunner] Message: Adding XMLSuites for file: .\src\main\java\com\jopari\testscript\testsuites\PayerUsersTest.xml, into list to execute
+2014-09-15 10:34:25,201 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testLogin()
+2014-09-15 10:34:25,821 INFO  [com.jopari.testscript.testscripts.util.TestUtil] Message: Entering Login
+2014-09-15 10:34:25,822 INFO  [com.jopari.testscript.testscripts.util.TestUtil] Message: Reading username and password from excel sheet :/D:/july11 workspace/AutomationScript/target/classes/PNCData.xlsx
+2014-09-15 10:34:25,822 INFO  [com.jopari.testscript.testscripts.util.TestUtil] Message: Logging with username :testuser_cci@payer.com and password:jopari123
+2014-09-15 10:35:06,132 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserAllCorrectInfo()
+2014-09-15 10:35:19,162 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:35:20,563 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Entered input data
+2014-09-15 10:35:20,623 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:35:22,155 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserAllCorrectInfo()
+2014-09-15 10:35:26,197 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserValidEmail()
+2014-09-15 10:35:38,906 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:35:40,111 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:35:40,119 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserValidEmail()
+2014-09-15 10:35:44,159 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserInvalidEmail()
+2014-09-15 10:35:56,682 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:35:57,833 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:35:59,842 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserInvalidEmail()
+2014-09-15 10:36:03,878 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserExistingEmailId()
+2014-09-15 10:36:16,455 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:36:17,773 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Entered input data
+2014-09-15 10:36:17,834 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:36:18,351 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserExistingEmailId()
+2014-09-15 10:36:22,472 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserShortNameValid()
+2014-09-15 10:36:35,074 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:36:36,213 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:36:36,221 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserShortNameValid()
+2014-09-15 10:36:40,256 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserFullNameValid()
+2014-09-15 10:36:52,797 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:36:53,959 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:36:57,967 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserFullNameValid()
+2014-09-15 10:36:58,002 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserPhoneValid()
+2014-09-15 10:37:10,446 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:37:11,637 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:37:11,645 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserPhoneValid()
+2014-09-15 10:37:15,684 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserPhoneInvalidSpecialCharacters()
+2014-09-15 10:37:28,083 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:37:29,256 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:37:29,264 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserPhoneInvalidSpecialCharacters()
+2014-09-15 10:37:33,305 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserPhoneInvalidAlphabets()
+2014-09-15 10:37:45,773 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:37:46,939 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:37:46,947 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserPhoneInvalidAlphabets()
+2014-09-15 10:37:50,984 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserExternalData()
+2014-09-15 10:38:03,493 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:38:04,809 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Entered input data
+2014-09-15 10:38:08,032 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:38:08,548 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserExternalData()
+2014-09-15 10:38:14,643 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserEmptyFields()
+2014-09-15 10:38:27,038 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:38:28,118 INFO  [com.jopari.testscript.pageobjects.UsersPageCreateUser] Message: Clicked Add User button
+2014-09-15 10:38:28,127 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserEmptyFields()
+2014-09-15 10:38:32,166 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testNewUserCancelButton()
+2014-09-15 10:38:44,680 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Create New User link
+2014-09-15 10:38:51,796 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testNewUserCancelButton()
+2014-09-15 10:38:55,831 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddRole()
+2014-09-15 10:39:10,320 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add Role link
+2014-09-15 10:39:10,888 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddRole()
+2014-09-15 10:39:14,926 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddRoleCancel()
+2014-09-15 10:39:27,596 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add Role link
+2014-09-15 10:39:28,360 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Cancel button
+2014-09-15 10:39:28,453 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddRoleCancel()
+2014-09-15 10:39:32,493 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddAdminValidLogin()
+2014-09-15 10:39:45,006 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add admin link
+2014-09-15 10:39:46,722 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed valid login
+2014-09-15 10:39:50,819 INFO  [com.jopari.testscript.pageobjects.UsersPageAddAdmin] Message: Clicked Search button on Add Admin display
+2014-09-15 10:39:50,819 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Clicked Search button
+2014-09-15 10:39:50,885 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddAdminValidLogin()
+2014-09-15 10:39:54,921 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddAdminInValidLogin()
+2014-09-15 10:40:07,736 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add admin link
+2014-09-15 10:40:09,441 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed valid login
+2014-09-15 10:40:13,535 INFO  [com.jopari.testscript.pageobjects.UsersPageAddAdmin] Message: Clicked Search button on Add Admin display
+2014-09-15 10:40:13,535 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Clicked Search button
+2014-09-15 10:40:43,624 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddAdminInValidLogin()
+2014-09-15 10:40:47,722 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddAdminEmailValid()
+2014-09-15 10:41:01,035 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add admin link
+2014-09-15 10:41:02,735 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed valid email
+2014-09-15 10:41:06,825 INFO  [com.jopari.testscript.pageobjects.UsersPageAddAdmin] Message: Clicked Search button on Add Admin display
+2014-09-15 10:41:06,825 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Clicked Search button
+2014-09-15 10:41:06,892 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddAdminEmailValid()
+2014-09-15 10:41:10,933 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddAdminEmailInValid()
+2014-09-15 10:41:20,665 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add admin link
+2014-09-15 10:41:22,343 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed Invalid email
+2014-09-15 10:41:26,439 INFO  [com.jopari.testscript.pageobjects.UsersPageAddAdmin] Message: Clicked Search button on Add Admin display
+2014-09-15 10:41:26,440 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Clicked Search button
+2014-09-15 10:41:56,504 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddAdminEmailInValid()
+2014-09-15 10:42:00,539 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddAdminFullNameValid()
+2014-09-15 10:42:10,913 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add admin link
+2014-09-15 10:42:12,612 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed Valid Fullname
+2014-09-15 10:42:16,705 INFO  [com.jopari.testscript.pageobjects.UsersPageAddAdmin] Message: Clicked Search button on Add Admin display
+2014-09-15 10:42:16,705 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Clicked Search button
+2014-09-15 10:42:16,759 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddAdminFullNameValid()
+2014-09-15 10:42:20,797 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testAddEmployerCancel()
+2014-09-15 10:42:33,527 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Add employer link
+2014-09-15 10:42:34,691 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Cancel Button on Add employer
+2014-09-15 10:42:34,724 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testAddEmployerCancel()
+2014-09-15 10:42:38,765 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testDisableUser()
+2014-09-15 10:42:51,156 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Disable link for the first user
+2014-09-15 10:42:55,343 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testDisableUser()
+2014-09-15 10:42:59,382 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testEnableUser()
+2014-09-15 10:43:11,849 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Enable link for the disabled user link
+2014-09-15 10:43:16,033 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testEnableUser()
+2014-09-15 10:43:20,126 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testDisableLoggedInUser()
+2014-09-15 10:46:25,480 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Disable link for Logged in User
+2014-09-15 10:46:25,486 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: accepted alert
+2014-09-15 10:46:25,997 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testDisableLoggedInUser()
+2014-09-15 10:46:30,038 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testDisableAndCancelLoggedInUser()
+2014-09-15 10:49:35,138 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Disable link for Logged in User
+2014-09-15 10:49:37,143 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: dismissed alert
+2014-09-15 10:49:37,154 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: accepted alert
+2014-09-15 10:49:37,154 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testDisableAndCancelLoggedInUser()
+2014-09-15 10:49:41,191 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testResetPassword()
+2014-09-15 10:49:54,515 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Reset password link
+2014-09-15 10:49:56,525 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testResetPassword()
+2014-09-15 10:50:00,565 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testRefresh()
+2014-09-15 10:50:19,312 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: clicked refresh link
+2014-09-15 10:50:23,394 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testRefresh()
+2014-09-15 10:50:27,426 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchLoginValid()
+2014-09-15 10:50:40,155 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:50:40,262 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed login
+2014-09-15 10:50:40,327 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid email
+2014-09-15 10:50:40,391 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid FullName
+2014-09-15 10:50:42,473 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Search Button
+2014-09-15 10:50:46,479 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed valid login
+2014-09-15 10:50:46,574 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchLoginValid()
+2014-09-15 10:50:50,610 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchLoginInValid()
+2014-09-15 10:51:03,234 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:51:03,329 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed login
+2014-09-15 10:51:03,391 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid email
+2014-09-15 10:51:03,455 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid FullName
+2014-09-15 10:51:05,530 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Search Button
+2014-09-15 10:51:09,536 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed Invalid email
+2014-09-15 10:51:09,603 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchLoginInValid()
+2014-09-15 10:51:13,640 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchEmailValid()
+2014-09-15 10:51:26,263 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:51:26,334 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed login
+2014-09-15 10:51:26,452 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid email
+2014-09-15 10:51:26,516 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid FullName
+2014-09-15 10:51:28,592 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Search Button
+2014-09-15 10:51:32,598 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed valid email
+2014-09-15 10:51:32,651 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchEmailValid()
+2014-09-15 10:51:36,687 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchEmailInValid()
+2014-09-15 10:51:49,106 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:51:49,171 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed login
+2014-09-15 10:51:49,245 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid email
+2014-09-15 10:51:49,302 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid FullName
+2014-09-15 10:51:51,392 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Search Button
+2014-09-15 10:51:55,398 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Typed invalid email
+2014-09-15 10:51:55,466 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchEmailInValid()
+2014-09-15 10:51:59,575 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchFullNameValid()
+2014-09-15 10:52:08,939 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:52:09,007 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed login
+2014-09-15 10:52:09,069 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid email
+2014-09-15 10:52:09,162 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid FullName
+2014-09-15 10:52:11,239 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Search Button
+2014-09-15 10:52:15,341 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchFullNameValid()
+2014-09-15 10:52:19,379 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchFullNameInValid()
+2014-09-15 10:52:31,821 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:52:31,890 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed login
+2014-09-15 10:52:31,951 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid email
+2014-09-15 10:52:32,035 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Typed valid FullName
+2014-09-15 10:52:34,090 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Search Button
+2014-09-15 10:52:38,165 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchFullNameInValid()
+2014-09-15 10:52:42,202 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchAll()
+2014-09-15 10:52:56,600 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:53:00,683 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Clicked search button without entering any information
+2014-09-15 10:53:04,738 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchAll()
+2014-09-15 10:53:08,777 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testSearchCancel()
+2014-09-15 10:53:22,349 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Search Users 
+2014-09-15 10:53:26,442 INFO  [com.jopari.testscript.pageobjects.UsersPageSearchUsers] Message: Clicked Cancel Button for Search Users
+2014-09-15 10:53:26,460 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testSearchCancel()
+2014-09-15 10:53:30,492 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Entering test method :testRemoveRoleLoggedInUser()
+2014-09-15 10:57:12,126 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Clicked Remove Role link for logged in user
+2014-09-15 10:57:12,131 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: accepted alert
+2014-09-15 10:57:12,644 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: accepted alert
+2014-09-15 10:57:46,006 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Successfully exiting test method :testRemoveRoleLoggedInUser()
+2014-09-15 10:57:51,937 INFO  [com.jopari.testscript.pageobjects.UsersPage] Message: Logging out of portal
+2014-09-15 10:57:53,937 INFO  [com.jopari.testscript.testscripts.util.TestUtil] Message: checking for "Forgor password?" link
+2014-09-15 10:58:01,527 INFO  [com.jopari.testscript.testscripts.PayerUsersTest] Message: Killed processes

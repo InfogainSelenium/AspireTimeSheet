@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TimeSheet" verbose="1" parallel="classes"
+	thread-count="5">
+	<parameter name="selenium.url" value="http://nayan.banerjee:Chayan@123!@aspire.infogain.com" />
+	<parameter name="selenium.repo.url" value="http://10.25.2.158:9701/PNCGH" />
+	<parameter name="browserString" value="*firefox" />
+	<parameter name="browser" value="*firefox" />
+
+	<test name="TimeSheet" preserve-order="true">
+		<classes>
+			<class name="com.jopari.testscript.testscripts.TimeSheetHome">
+				<methods>
+				 	<include name="isSelectedYearpresentYear" />
+				 	<include name="testAddNewBankStatusSent" />
+					<include name="testBankStatusBAD" /> 
+					<include name="testAddNewBankStatusNew" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

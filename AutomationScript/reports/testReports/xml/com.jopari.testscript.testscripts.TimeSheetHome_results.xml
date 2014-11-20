@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TimeSheet"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.147">
+  <properties />
+  
+  
+            <testcase name="isSelectedYearpresentYear" time="20.145" classname="com.jopari.testscript.testscripts.TimeSheetHome" />
+                <testcase name="show" time="5.002" classname="com.jopari.testscript.testscripts.TimeSheetHome" />
+      
+</testsuite>

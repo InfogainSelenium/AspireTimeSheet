@@ -1,0 +1,2 @@
+2014-11-18 13:26:58,354 INFO  [com.jopari.automation.testng.util.TestNGHelper] Message: Generating XMLSuites from: .\src\main\java\com\jopari\testscript\testsuites\TimeSheet.xml
+2014-11-18 13:26:58,612 INFO  [com.jopari.testscript.testscripts.AutomationTestSuiteRunner] Message: Adding XMLSuites for file: .\src\main\java\com\jopari\testscript\testsuites\TimeSheet.xml, into list to execute

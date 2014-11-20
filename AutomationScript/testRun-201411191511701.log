@@ -1,0 +1,11 @@
+2014-11-19 15:32:59,717 INFO  [com.jopari.automation.testng.util.TestNGHelper] Message: Generating XMLSuites from: .\src\main\java\com\jopari\testscript\testsuites\TimeSheet.xml
+2014-11-19 15:33:00,169 INFO  [com.jopari.testscript.testscripts.AutomationTestSuiteRunner] Message: Adding XMLSuites for file: .\src\main\java\com\jopari\testscript\testsuites\TimeSheet.xml, into list to execute
+2014-11-19 15:33:13,658 INFO  [com.jopari.testscript.pageobjects.AspireHomePage] Message: Clicked Time Sheet Image link
+2014-11-19 15:33:13,747 INFO  [com.jopari.testscript.pageobjects.AspireHomePage] Message: Switching to the new Window of Time Sheet!!
+2014-11-19 15:33:16,750 INFO  [com.jopari.testscript.testscripts.util.TestUtil] Message: Entering login for TimeSheet Portal
+2014-11-19 15:33:16,751 INFO  [com.jopari.testscript.testscripts.util.TestUtil] Message: Logging with username :nayan.banerjee and password:Chayan@123!
+2014-11-19 15:33:28,989 INFO  [com.jopari.testscript.pageobjects.LoginPage] Message: Loggin into TimeSheet Portal with  its credentials
+2014-11-19 15:33:28,989 INFO  [com.jopari.testscript.testscripts.TimeSheetHome] Message: Successfully Login into the TimeSheet Portal!!
+2014-11-19 15:33:29,004 INFO  [com.jopari.testscript.testscripts.TimeSheetHome] Message: Entering test method :isSelectedYearpresentYear
+2014-11-19 15:33:49,149 INFO  [com.jopari.testscript.testscripts.TimeSheetHome] Message: Exiting method successfully :isSelectedYearpresentYear
+2014-11-19 15:33:54,884 INFO  [com.jopari.testscript.testscripts.TimeSheetHome] Message: Killed processes
