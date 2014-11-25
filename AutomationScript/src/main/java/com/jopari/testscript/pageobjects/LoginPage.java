@@ -1,10 +1,8 @@
 package com.jopari.testscript.pageobjects;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.browserlaunchers.Sleeper;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
 
 import com.jopari.automation.selenium.base.Constants;
 import com.jopari.automation.selenium.browser.FirefoxBrowser;
@@ -15,6 +13,8 @@ import com.jopari.automation.selenium.logging.TestLogger;
 import com.jopari.automation.webdriver.util.WebDriverUtil;
 import com.jopari.automation.webdriver.util.WebDriverUtilException;
 import com.jopari.testscript.testscripts.util.TestUtil;
+//import org.openqa.selenium.browserlaunchers.Sleeper;
+//import org.openqa.selenium.server.browserlaunchers.Sleeper;
 
 public class LoginPage
 {
