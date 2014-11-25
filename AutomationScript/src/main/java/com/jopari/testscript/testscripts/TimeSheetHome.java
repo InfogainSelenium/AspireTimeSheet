@@ -3,9 +3,10 @@ package com.jopari.testscript.testscripts;
 import java.util.Calendar;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.browserlaunchers.Sleeper;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+//import org.openqa.selenium.browserlaunchers.Sleeper;
+//import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -40,7 +41,8 @@ public class TimeSheetHome extends BaseTestCase
 			loginpage= aspireHomePage.clickTimeSheetImg();
 			
 			
-			timeSheetHomePage= loginpage.loginTimeSheet("nayan.banerjee","Chayan@123!");
+			//timeSheetHomePage= loginpage.loginTimeSheet("nayan.banerjee","Chayan@123!");^
+			timeSheetHomePage= loginpage.loginTimeSheet("hareesh.t","harish^6");
 			
 			currentProjectDirectory = System.getProperty("user.dir");
 			TestUtil.infoLog(this.getClass(), "Successfully Login into the TimeSheet Portal!!");
