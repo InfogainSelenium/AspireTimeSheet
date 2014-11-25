@@ -2,8 +2,8 @@ package com.jopari.testscript.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.browserlaunchers.Sleeper;
-
+//import org.openqa.selenium.browserlaunchers.Sleeper;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import com.jopari.automation.selenium.browser.FirefoxBrowser;
 import com.jopari.automation.selenium.browser.IInternetBrowser;
 import com.jopari.automation.selenium.logging.InfoEvent;
