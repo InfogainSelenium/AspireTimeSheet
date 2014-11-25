@@ -1,18 +1,15 @@
 package com.jopari.testscript.pageobjects;
 
-import java.util.Calendar;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.browserlaunchers.Sleeper;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+//import org.openqa.selenium.browserlaunchers.Sleeper;
+//import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Test;
 
 import com.jopari.automation.selenium.browser.FirefoxBrowser;
 import com.jopari.automation.selenium.browser.IInternetBrowser;
-import com.jopari.automation.selenium.logging.InfoEvent;
-import com.jopari.automation.selenium.logging.TestLogger;
 import com.jopari.automation.webdriver.util.WebDriverUtil;
 import com.jopari.automation.webdriver.util.WebDriverUtilException;
 import com.jopari.automation.webdriver.util.WindowHelper;
