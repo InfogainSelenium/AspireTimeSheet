@@ -2,7 +2,6 @@ package com.jopari.testscript.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.browserlaunchers.Sleeper;
 import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import com.jopari.automation.selenium.browser.FirefoxBrowser;
 import com.jopari.automation.selenium.browser.IInternetBrowser;
@@ -13,6 +12,7 @@ import com.jopari.automation.webdriver.util.WebDriverUtilException;
 import com.jopari.automation.webdriver.util.WindowHelper;
 import com.jopari.testscript.testscripts.util.TestDataHome;
 import com.jopari.testscript.testscripts.util.TestUtil;
+//import org.openqa.selenium.browserlaunchers.Sleeper;
 
 /**
  * This class is a page object for PayerHomePage.java and ProviderHomePage.java
@@ -67,21 +67,6 @@ public class AspireHomePage
 	}*/
 
 
-
-
-	
-
-	
-	
-	
-
-	
-	
-
-
-	
-	
-	
 	/**
 	 * This method returns the current driver handler
 	 * 
