@@ -1,11 +1,14 @@
 package com.jopari.testscript.pageobjects;
 
+import java.util.List;
+import java.util.ArrayList;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.server.browserlaunchers.Sleeper;
-//import org.openqa.selenium.browserlaunchers.Sleeper;
-//import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.openqa.selenium.support.ui.Select;
 
 import com.jopari.automation.selenium.browser.FirefoxBrowser;
@@ -15,6 +18,7 @@ import com.jopari.automation.webdriver.util.WebDriverUtilException;
 import com.jopari.automation.webdriver.util.WindowHelper;
 import com.jopari.testscript.testscripts.util.TestDataHome;
 import com.jopari.testscript.testscripts.util.TestUtil;
+//import org.openqa.selenium.browserlaunchers.Sleeper;
 
 /**
  * This class is a page object for PayerHomePage.java and ProviderHomePage.java
@@ -88,15 +92,409 @@ public class TimeSheetHomePage
 	                  return selectedyear; 
 	  }
 	  
-	  public static Select selectDropDown(WebDriver driver)
+	
+	
+	  
+	  /* Select Weekends from DropDown */
+	  public  Select selectDropDown(WebDriver driver) throws Exception
 		{
-			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_ddlWeek']"));
-		   	
+		
+		  
+		  
+		  WebDriverUtil.waitForElementByXpath("//*[@id='ctl00_contentplaceholder1_ddlWeek']", 10, driver);
+		  WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_ddlWeek']"));
+		  Select select =new Select(element);
+	      return select;
+		  	
+		
+	}
+		
+	  /* Select week end and verify project filed*/
+	
+	  public  void WeekEndDate() throws Exception
+		
+		{
+			
+		  	Sleeper.sleepTightInSeconds(2);
+			ArrayList<String> arrayList = new ArrayList<String>();
+			Sleeper.sleepTightInSeconds(2);
+			selectDropDown(driver);       
+	        List<WebElement> optionAll =selectDropDown(driver).getOptions();
+	        
+		   	for(WebElement option : optionAll)
+		   		{
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText().trim());
+		   		}
+	        
+	        
+	       for(int i=1;i<arrayList.size();i++)
+	        	{
+	    	    
+	    	   		System.out.println(arrayList.get(i));
+	                Sleeper.sleepTightInSeconds(2);
+	                selectDropDown(driver); 
+	                selectDropDown(driver).selectByVisibleText(arrayList.get(i));
+	                Sleeper.sleepTightInSeconds(6);
+	             WebElement elementp=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlProject']"));
+	            Select selectp =new Select(elementp);
+	                Sleeper.sleepTightInSeconds(4);
+	               if(elementp.isEnabled())
+	              {
+	                	System.out.println("In Project");
+	        	        	break;
+	              }
+	             
+	             driver.get("https://time.infogain.com/Timesheet/App/TimesheetEntry.aspx");
+	               //driver.navigate().back();
+	             Sleeper.sleepTightInSeconds(7);
+	        }
+	               
+	        	}
+	  
+	  public void SelectProject() throws Exception
+
+		{
+			ArrayList<String> arrayList = new ArrayList<String>();
+			   Sleeper.sleepTightInSeconds(5);
+		   	WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlProject']"));
+		   													
 	        Select select =new Select(element);
-	        return select;
+	               
+	        List<WebElement> optionAll =select.getOptions();
+	        
+	    
+	        
+	        for(WebElement option : optionAll)
+	        {
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText());
+	        }
+	        
+	        for(int i=0;i<arrayList.size();i++)
+	        {
+	              System.out.println(arrayList.get(i));
+	        }
+	        
+	        
+	        select.selectByVisibleText(arrayList.get(1));
+	        Sleeper.sleepTightInSeconds(3);
+		}	  
+	  
+	  
+	  
+	  public void SelectLocation() throws Exception
+
+		{
+			ArrayList<String> arrayList = new ArrayList<String>();
+		   	WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlLocation']"));
+	        Select select =new Select(element);
+	               
+	        List<WebElement> optionAll =select.getOptions();
+	        		   	        
+	        for(WebElement option : optionAll)
+	        {
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText());
+	        }
+	        
+	        for(int i=0;i<arrayList.size();i++)
+	        {
+	              System.out.println(arrayList.get(i));
+	        }
+	        
+	      
+	        select.selectByVisibleText(arrayList.get(2));
+	        Sleeper.sleepTightInSeconds(3);
+			
+		}  
+	  
+	  public  void HrsType() throws Exception
+
+		{
+			ArrayList<String> arrayList = new ArrayList<String>();
+		   	WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlHourType']"));
+	        Select select =new Select(element);
+	               
+	        List<WebElement> optionAll =select.getOptions();
+	        
+		   	
+		   
+	        
+	        for(WebElement option : optionAll)
+	        {
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText());
+	        }
+	        
+	        for(int i=0;i<arrayList.size();i++)
+	        {
+	              System.out.println(arrayList.get(i));
+	        }
+	        
+	        
+	        select.selectByVisibleText(arrayList.get(2));
+	        Sleeper.sleepTightInSeconds(3);
+	        
+			
+		}
+	  
+	  public void Task()
+
+		{
+			ArrayList<String> arrayList = new ArrayList<String>();
+		   	WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlProjectTask']"));
+	        Select select =new Select(element);
+	               
+	        List<WebElement> optionAll =select.getOptions();
+	        	   
+	        
+	        for(WebElement option : optionAll)
+	        {
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText());
+	        }
+	        
+	        for(int i=0;i<arrayList.size();i++)
+	        {
+	              System.out.println(arrayList.get(i));
+	        }
+	        
+
+	        select.selectByVisibleText(arrayList.get(10));
+	        Sleeper.sleepTightInSeconds(3);
+			
+		}
+	  
+	  public  void SubTask()
+
+		{
+			ArrayList<String> arrayList = new ArrayList<String>();
+		   	WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlSubTask']"));
+	        Select select =new Select(element);
+	               
+	        List<WebElement> optionAll =select.getOptions();
+	        
+		   	
+		   
+	        
+	        for(WebElement option : optionAll)
+	        {
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText());
+	        }
+	        
+	        for(int i=0;i<arrayList.size();i++)
+	        {
+	              System.out.println(arrayList.get(i));
+	        }
+	        
+	       
+	        select.selectByVisibleText(arrayList.get(3));
+	        Sleeper.sleepTightInSeconds(3);
+			
+		}
+	  
+	  public  void CRId()
+
+		{
+			ArrayList<String> arrayList = new ArrayList<String>();
+		   	WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_ddlCr']"));
+	        Select select =new Select(element);
+	               
+	        List<WebElement> optionAll =select.getOptions();
+	         
+	        for(WebElement option : optionAll)
+	        {
+	              //System.out.println(option.getText());
+	              arrayList.add(option.getText());
+	        }
+	        
+	        for(int i=0;i<arrayList.size();i++)
+	        {
+	              System.out.println(arrayList.get(i));
+	        }
+	        
+	        Sleeper.sleepTightInSeconds(4);
+	        
+			
 		}
 		
-	
+		public  void Description()
+
+		{
+			
+			Sleeper.sleepTightInSeconds(2);
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_txtDesc']")).sendKeys("Testing");	
+			
+		}
+		
+		public  void FillHrs(WebDriver driver,ArrayList<String> myList)
+
+		{
+			
+			Sleeper.sleepTightInSeconds(2);
+			int i=0;
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tm']")).clear();
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tm']")).sendKeys(myList.get(i));
+			i++;
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tt']")).clear();
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tt']")).sendKeys(myList.get(i));
+			i++;
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tw']")).clear();
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tw']")).sendKeys(myList.get(i));
+			i++;
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tth']")).clear();
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tth']")).sendKeys(myList.get(i));
+			i++;
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tf']")).clear();
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_tf']")).sendKeys(myList.get(i));
+				
+			Sleeper.sleepTightInSeconds(5);
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_chkselect']")).click();
+			Sleeper.sleepTightInSeconds(3);
+			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_btnSave']")).click();
+			
+			Sleeper.sleepTightInSeconds(5);
+			
+			
+		}
+	  
+		public  boolean verifyHrs(WebDriver driver)
+		{
+			/*try
+			{*/
+			//*[@id='ctl00_contentplaceholder1_rpt_InOutTiming_ctl01_Label22']
+			String myTime ="0:00";
+			String xpathStartValue="//*[@id='ctl00_contentplaceholder1_rpt_InOutTiming_ctl01_Label";
+			String xpathEndValue="']";
+			ArrayList<String>   myList = new ArrayList<String>();
+			for(int i=21;i<=25;i++)
+			{
+			String strHrs= driver.findElement(By.xpath(xpathStartValue+i+xpathEndValue)).getText().trim();
+			System.out.println(strHrs);
+			if(strHrs.equals("-"))
+			{
+				strHrs="09:50 (9.83)";
+			}
+			
+			
+				String[] str= strHrs.split("\\(");
+				
+				System.out.println("the time is " + str[0]);
+				String time =new String(str[0].trim());
+				time.replaceAll("\\:", "A");
+				
+				System.out.println(time);
+				String[] timeNew = time.split(":");
+				 myTime= timeNew[0]+"."+timeNew[1];
+			
+				 Double DmyTime= Double.parseDouble(myTime);
+				 if(DmyTime < 8.0)
+				 {
+					 myTime ="9.50";
+				 }
+			System.out.println(myTime);
+			myList.add(myTime);
+			
+			//FillHrs(driver)
+			}
+			for(String s :myList)
+			{
+				
+				System.out.println(s.toString());
+			}
+			FillHrs(driver,myList);
+			
+			boolean isTimeValid= verifyMyTime(myTime);
+			
+			return isTimeValid;
+			
+						
+		}
+
+		public boolean verifyMyTime(String myTime)
+		{
+			int flag =0;
+			double i=Double.parseDouble(myTime);
+			if(i < 8)
+			{
+				flag =1;
+			}
+			if(flag == 0)
+			return true;
+			else
+				return false;
+			
+		}
+	 
+		/* This method select a Action which needs to perform (eg. Add,Delete,save and Submit) 
+		 * 
+		 * @param
+		 * @ throws Exception
+		 * 
+		 * */
+		
+		public  String selectButttonType(String ButtonType)
+		
+		{
+			Sleeper.sleepTightInSeconds(2);
+			
+			//String Action;
+			//String Button="//*[@id='ctl00_contentplaceholder1_btnVisible']/td[4]";
+			String Add="//*[@id='ctl00_contentplaceholder1_btnAddRow']";
+			
+			String Delete="//*[@id='ctl00_contentplaceholder1_btnDeleteRow']";
+			
+			String Save="//*[@id='ctl00_contentplaceholder1_btnSave']";
+			
+			String Submit="//*[@id='ctl00_contentplaceholder1_btnSubmit']";
+			
+						
+			switch(ButtonType)
+	        {
+	            case "Add":
+	            	Sleeper.sleepTightInSeconds(5);
+	                driver.findElement(By.xpath(Add)).click();
+	                System.out.println("Sucessfully click on Add Button ");
+	                break;
+
+	            case "Delete":
+	            	
+	            	Sleeper.sleepTightInSeconds(5);
+	    			driver.findElement(By.xpath("//*[@id='ctl00_contentplaceholder1_grdTimesheetEntry_ctl02_chkselect']")).click();
+	    			Sleeper.sleepTightInSeconds(5);
+	            	driver.findElement(By.xpath(Delete)).click();
+	            	
+	            /* This code for handle the Confirmation Popup*/
+	            	  Alert A2 = driver.switchTo().alert();
+	            	  String Alert2 = A2.getText();
+	            	  System.out.println(Alert2);
+	            	  Sleeper.sleepTightInSeconds(5);
+	            	  //To click On yes button of confirmation box.
+	            	  A2.accept();
+	            		            	
+	                break;
+
+	            case "Save":
+	            	driver.findElement(By.xpath(Save)).click();
+	                System.out.println("The value of a is two");
+	                break;
+	                
+	            case "Submit":
+	            	driver.findElement(By.xpath(Submit)).click();
+	                System.out.println("The value of a is two");
+	                break;
+
+	               
+	         }
+			 return ButtonType; 
+		}
+		
+		
+		
+	//--------------------------------------------------------------------------------------------------------//
 
 	/**
 	 * This method recognise a web link by its text and clicks the web link
